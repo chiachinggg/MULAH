@@ -2,14 +2,19 @@
 <html lan="en-UK">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chia Ching's Interview Assessment for Mulah Technologies</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <style></style>
   </head>
   <body>
-    <header>Chia Ching's Interview Assessment for Mulah Technologies</header>
+    <h1>
+        Chia Ching's Interview Assessment for Mulah Technologies
+      </h1>
     <section id = "contact" class="clearfix">
       <a id="Resume" class="button" href="https://docs.google.com/document/d/1GlLIf1w2c3NLAIReaLtvFOC9uGu8s3TU/edit">
-        <span>Resume</span> </a> 
+        <span>Resume</span> 
+        </a> 
     
     </section>
     <section id="main content">
@@ -101,7 +106,56 @@
         </tr>
     </table>
 
-      <footer style="color:Black;"> Created by Chia Ching. </footer>
+    <br>
+    <br>
+
+    <table border="1">
+          <tr>
+            <th>Category</th>
+            <th>Value</th>
+          </tr>
+          <tr>
+            <td>Alpha</td>
+            <td id="alphaValue"></td>
+          </tr>
+          <tr>
+            <td>Beta</td>
+            <td id="betaValue"></td>
+          </tr>
+          <tr>
+            <td>Charlie</td>
+            <td id="charlieValue"></td>
+          </tr>
+      </table>
+
+      <script>
+        var table1Values = {
+        A5: 2,
+        A7: 5,
+        A12: 3,
+        A13: 90,
+        A15: 80,
+        A20: 28
+      };
+
+    // Perform calculations
+    var alphaResult = table1Values.A5 + table1Values.A20;
+    var betaResult = table1Values.A15 / table1Values.A7;
+    var charlieResult = table1Values.A13 * table1Values.A12;
+
+    // Display results in HTML
+    document.getElementById("alphaValue").textContent = alphaResult;
+    document.getElementById("betaValue").textContent = betaResult;
+    document.getElementById("charlieValue").textContent = charlieResult;
+  </script>
+    <br>
+    <br>
+    <br>
+
+      <footer style="color:Black;"> 
+        Created by Chia Ching. 
+    </footer>
+</section>
       
     
 
