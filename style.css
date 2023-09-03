@@ -4,7 +4,6 @@ table {
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
-    border: 3px solid purple;
   }
   
   thead th:nth-child(1) {
@@ -27,4 +26,24 @@ table {
   td {
     padding: 20px;
   }
-  
+  html {
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+
+thead th,
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
+}
