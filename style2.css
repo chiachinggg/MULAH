@@ -1,21 +1,43 @@
-/* Set the overall page dimensions */
+/* Set the overall page dimensions and basic styling */
 html, body {
     width: 640px;
     height: 1136px;
-    margin: 20;
-    padding: 20;
+    margin: 50px;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Center the image */
+img {
+    max-width: 40%;
+    height: auto;
+    display: block;
+}
+
+/* Define a container div with a maximum width */
+.container {
+    max-width: 80%;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding for content within the container */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the container */
 }
 
 /* Style subheadings with grey text */
 h1 {
-    color: #909194;
+    color: #333;
+    font-size: 24px;
+    margin-top: 20px;
 }
+
 /* Style subheadings with orange text */
 h4 {
     color: #ea8000;
+    font-size: 18px;
 }
 
-/* Style orange buttons */
+/* Style orange buttons with hover effect */
 .button {
     background-color: #ea8000;
     color: white;
@@ -27,18 +49,11 @@ h4 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
-/* Example usage of the orange button class */
-.button {
-    background-color: #ea8000;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.button:hover {
+    background-color: #ff9f4d;
 }
+

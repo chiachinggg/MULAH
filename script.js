@@ -1,13 +1,5 @@
 // Function to check if a value exists in cookies
 function checkCookieValue(phoneNumber) {
-    // const cookies = document.cookie.split(';');
-    // for (let i = 0; i < cookies.length; i++) {
-    //     const cookie = cookies[i].trim().split('=');
-    //     if (cookie.length === 2 && cookie[0] === 'phoneNumber' && cookie[1] === phoneNumber) {
-    //         return true;
-    //     }
-    // }
-    // return false;
     if (phoneNumber===173527250){
         return true;
     }
