@@ -23,16 +23,24 @@ img {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the container */
 }
 
+
 /* Style subheadings with grey text */
 h1 {
+    font-family: 'Cormorant', sans-serif;
     color: #333;
-    font-size: 24px;
+    font-size: 60px;
     margin-top: 20px;
 }
 
 /* Style subheadings with orange text */
 h4 {
+    font-style: italic;
     color: #ea8000;
+    font-size: 18px;
+}
+
+h5 {
+    font-style: italic;
     font-size: 18px;
 }
 
@@ -49,7 +57,7 @@ h4 {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    transition: background-color 0.3s ease; 
 }
 /* Stylish placeholder styles */
 input[type="number"], [type="text"], input[type="date"], input[type="email"] {
@@ -59,7 +67,7 @@ input[type="number"], [type="text"], input[type="date"], input[type="email"] {
     border-radius: 5px;
     margin-bottom: 10px;
     font-size: 16px;
-    width: 100%;
+    width: 40%;
     color: #555;
 }
 
@@ -69,6 +77,7 @@ input[type="email"]::placeholder {
     color: #888;
     font-style: italic;
 }
+
 ul {
     list-style: none;
     padding: 0;

@@ -33,7 +33,6 @@ function saveData() {
     const email = document.getElementById('email').value
     const bday = document.getElementById('bday').value
 
-    // Set cookies before navigating
     document.cookie = "phoneNumber=" + phoneNumber;
     document.cookie = "name=" + name;
     document.cookie = "email=" + email;
@@ -46,7 +45,6 @@ function saveData() {
         bday: bday,
     };
 
-    // Convert the data to a JSON string
     const jsonData = JSON.stringify(registrationData);
 
     // Store the JSON data in local storage
@@ -66,14 +64,15 @@ function checkValues(){
     const bypassEmail = bypassEmailCheckbox.checked;
     // ADD SEPARATE CHECKS LATER
 
-    let valid = true; // Flag to check overall validity
+    let valid = true;
 
     // Check name input
     if (name === '') {
         validationMessage.textContent = 'Please insert a name.';
         valid = false;
     } else {
-        validationMessage.textContent = ''; // Clear the validation message
+        // Clear the validation message
+        validationMessage.textContent = '';  
     }
 
     // Check birthday input
@@ -81,15 +80,14 @@ function checkValues(){
         validationMessage1.textContent = 'Please insert your birthday.';
         valid = false;
     } else {
-        validationMessage1.textContent = ''; // Clear the validation message
+        validationMessage1.textContent = '';
     }
 
-    // Check email input
     if (!bypassEmail && email === '') {
         validationMessage2.textContent = 'Please insert a valid email address.';
         valid = false;
     } else {
-        validationMessage2.textContent = ''; // Clear the validation message
+        validationMessage2.textContent = ''; 
     }
 
     if(valid===true){
@@ -99,7 +97,6 @@ function checkValues(){
     }
 
     return valid; 
-
 
 }
 
@@ -139,17 +136,5 @@ function getCookieValue2(cookieName) {
     return '';
 }
 
-
-
-function populatePage() {
-    const phoneNumber = localStorage.getItem('phoneNumber').value;
-    const userData = getCookieValue3(phoneNumber)
-
-    // Populate the page with the retrieved data
-    document.getElementById('phoneNumber').textContent = userData.phoneNumber
-    document.getElementById('bday').textContent = userData.bday
-    document.getElementById('name').textContent = userData.name;
-    document.getElementById('email').textContent = userData.email;
-}
 
 

@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>User Data</title>
     <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant:400,700&display=swap">
+
     <style></style>
   </head>
   <body>
+    <div style="text-align: center; margin-top: 100px;">
+        <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.0Q3cQp_beY1kbs2NpvynmwHaCL%26pid%3DApi&sp=1694073896T6baf3d182c035b7a538be80cb4af01c635148ea9f7ffd9edf11998b0ccccfb10" 
+        alt="Logo">
+    </div>
     
     <div style="text-align: left; margin-top: 100px;">
         <h1>Show Data</h1>
         <h2>User Data:</h2>
         <ul>
+            <li><strong>Phone Number:</strong> <span id="phoneNumber"></span></li>
             <li><strong>Name:</strong> <span id="name"></span></li>
             <li><strong>Date of Birth:</strong> <span id="bday"></span></li>
             <li><strong>Email:</strong> <span id="email"></span></li>
-            <li><strong>Phone Number:</strong> <span id="phoneNumber"></span></li>
+        
         </ul>
     </div>
     
@@ -35,12 +42,18 @@
 
         if (jsonData) {
             const registrationData = JSON.parse(jsonData);
-
-            // Now you have the data, and you can populate it on the page
             document.getElementById('phoneNumber').textContent = registrationData.phoneNumber;
             document.getElementById('name').textContent = registrationData.name;
-            document.getElementById('email').textContent = registrationData.email;
             document.getElementById('bday').textContent = registrationData.bday;
+            const emailInput = document.getElementById("email");
+            const email = registrationData.email;
+
+            if (email === "") {
+                emailInput.textContent = "-";
+            } else {
+                emailInput.textContent = email;
+            }
+            
         }
     </script>
 </body>
