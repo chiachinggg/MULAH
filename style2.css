@@ -2,8 +2,8 @@
 html, body {
     width: 640px;
     height: 1136px;
-    margin: 50px;
-    padding: 50px;
+    margin: 10px;
+    padding: 10px;
     font-family: Arial, sans-serif;
     background-color: #ffffff;
 }
@@ -18,8 +18,7 @@ img {
 /* Define a container div with a maximum width */
 .container {
     max-width: 80%;
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 20px; /* Add padding for content within the container */
+    padding: 10px; /* Add padding for content within the container */
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the container */
 }
