@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lan="en-UK">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Data</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <style></style>
+  </head>
+  <body>
+    <h1>Show Data</h1>
+    <div class="container">
+        <h2>User Data:</h2>
+        <ul>
+            <li><strong>Name:</strong> <span id="name"></span></li>
+            <li><strong>Date of Birth:</strong> <span id="bday"></span></li>
+            <li><strong>Email:</strong> <span id="email"></span></li>
+            <li><strong>Phone Number:</strong> <span id="phoneNumber"></span></li>
+        </ul>
+    </div>
+    
+    <div style="text-align: center; margin-top: 100px;"></div>
+    <footer>
+        <p>Powered by <a href="https://www.mulahrewards.com/"> MulahRewards.com</a></p>
+    </footer>
+    </div>
+
+    <!-- Include your external JavaScript file -->
+    <script src="script.js"></script>
+
+    <!-- Add a separate script tag for your code -->
+    <script>
+        const jsonData = localStorage.getItem('registrationData');
+
+        if (jsonData) {
+            const registrationData = JSON.parse(jsonData);
+
+            // Now you have the data, and you can populate it on the page
+            document.getElementById('phoneNumber').textContent = registrationData.phoneNumber;
+            document.getElementById('name').textContent = registrationData.name;
+            document.getElementById('email').textContent = registrationData.email;
+            document.getElementById('bday').textContent = registrationData.bday;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+/* Set the overall page dimensions */
+html, body {
+    width: 640px;
+    height: 1136px;
+    margin: 20;
+    padding: 20;
+}
+
+/* Style subheadings with grey text */
+h1 {
+    color: #909194;
+}
+/* Style subheadings with orange text */
+h4 {
+    color: #ea8000;
+}
+
+/* Style orange buttons */
+.button {
+    background-color: #ea8000;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Example usage of the orange button class */
+.button {
+    background-color: #ea8000;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
